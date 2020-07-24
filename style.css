@@ -1,0 +1,74 @@
+:root {
+  --white: #fafafa;
+  --grey-dark-color: #909090;
+  --grey-light-color: #ececec;
+
+  --font-size-large: 24px;
+  --font-size-medium: 20px;
+
+  --padding: 12px;
+}
+html {
+  height: 100%;
+  background-image: linear-gradient(to left, #ffd966, #97d077);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: var(--white);
+}
+.title {
+  color: var(--white);
+  font-size: var(--font-size-large);
+}
+.toDoForm {
+  width: 300px;
+  height: 50px;
+
+  background-color: var(--white);
+  display: flex;
+  padding: var(--padding);
+}
+.toDoForm input {
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  width: 90%;
+}
+.toDoForm .addBtn {
+  width: 10%;
+  font-size: var(--font-size-medium);
+}
+ul {
+  background-color: var(--white);
+  width: 300px;
+  height: 100%;
+  padding: var(--padding);
+}
+li {
+  padding: var(--padding) 0;
+  display: flex;
+  border-bottom: 1px solid var(--grey-light-color);
+}
+li input {
+  width: 10%;
+}
+li span {
+  width: 80%;
+}
+li button {
+  width: 10%;
+  color: var(--grey-dark-color);
+}
+span.checked {
+  text-decoration: line-through;
+  color: var(--grey-dark-color);
+}
